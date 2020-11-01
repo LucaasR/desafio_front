@@ -31,7 +31,8 @@ const MenuBar = ({
         return (
           <div key={subOption.name}>
             <ListItem button key={subOption.name}>
-              <Link to={subOption.url}>
+              <Link to={subOption.url} className={classes.menuItem}>
+                {subOption.icon}
                 <ListItemText inset primary={subOption.name} />
               </Link>
             </ListItem>
@@ -70,9 +71,6 @@ const MenuBar = ({
       >
         <div>
           <List>
-            <ListItem key="menuHeading" divider disableGutters>
-              <ListItemText inset primary="Nested Menu" />
-            </ListItem>
             {handler(menuItems.data)}
             <Divider />
             {handler(menuItems.system)}

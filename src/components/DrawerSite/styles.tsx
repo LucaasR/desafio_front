@@ -20,6 +20,10 @@ export const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
+    height: 'calc(100% - 55px)',
+    backgroundColor: 'rgba(0, 0, 0, 0.65)',
+    position: 'absolute',
+    top: '55px',
   },
   content: {
     flexGrow: 1,
@@ -28,5 +32,10 @@ export const useStyles = makeStyles(theme => ({
   closeMenuButton: {
     marginRight: 'auto',
     marginLeft: 0,
+  },
+  menuItem: {
+    display: 'flex',
+    alignItems: 'center',
+    color: 'white',
   },
 }));
