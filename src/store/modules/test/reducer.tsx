@@ -7,7 +7,7 @@ const INITIAL_STATE = {};
 export const dataReducer = (state = INITIAL_STATE, action: any) => {
 
   switch (action.type) {
-    // case  ...: 
+    // case  ...:
     default:
       return state;
   }
