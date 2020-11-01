@@ -116,7 +116,7 @@
     "eslint-plugin-react": "^7.17.0",
     "nodemon": "^2.0.1",
     "prettier": "^1.19.1",
-    "react-app-rewired": "^2.1.5"
+    "react-app-rewired": "^2.1.6"
   },
   "jest": {
     "roots": [
