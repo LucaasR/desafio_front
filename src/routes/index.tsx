@@ -1,16 +1,20 @@
 import React from 'react';
-import { Switch } from 'react-router-dom';
 
-import Route from './Route';
+import { Switch, Route } from 'react-router-dom';
 
-import Home from '../pages/Home';
-import Dashboard from '../pages/Dashboard';
+import Certificate from 'pages/CertificatePage';
+import Dashboard from 'pages/Dashboard';
+import DefaultLayout from 'pages/_layouts/default';
+import Shield from 'pages/Shield';
 
 export default function Routes() {
   return (
     <Switch>
-      <Route path="/" exact component={Home} isPrivate />
-      <Route path="/dashboard" component={Dashboard} isPrivate />
+      <DefaultLayout>
+        <Route path="/" exact component={Dashboard} />
+        <Route path="/security" component={Shield} />
+        <Route path="/ssl" component={Certificate} />
+      </DefaultLayout>
     </Switch>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { useStyles } from './styles';
 
 const Footer = () => {
-  return <footer>Footer</footer>;
+  const classes = useStyles();
+  return <footer className={classes.footer}>Footer</footer>;
 };
 
 export default Footer;

@@ -1,28 +1,28 @@
 import React from 'react';
-import { Build, Dashboard, Lock, Security, Store } from '@material-ui/icons';
+import { Dashboard, Lock, Security } from '@material-ui/icons';
 
 const menuIndex = {
   data: [
     {
       name: 'Dashboard',
       icon: <Dashboard />,
-      url: '/item1',
-    },
-    {
-      name: 'Certificados SSL',
-      icon: <Lock />,
-      url: '/item1',
+      url: '/',
     },
     {
       name: 'Blindagem de site',
       icon: <Security />,
-      url: '/item1',
+      url: '/security',
     },
     {
-      name: 'Loja',
-      icon: <Store />,
-      url: '/item2',
+      name: 'Certificados SSL',
+      icon: <Lock />,
+      url: '/ssl ',
     },
+    // {
+    //   name: 'Loja',
+    //   icon: <Store />,
+    //   url: '/item2',
+    // },
     // {
     //   name: 'WAF',
     //   children: [
@@ -41,13 +41,13 @@ const menuIndex = {
     //   ],
     // },
   ],
-  system: [
-    {
-      name: 'Sistema',
-      icon: <Build />,
-      url: '/item1',
-    },
-    // {
+  // system: [
+  //   {
+  //     name: 'Sistema',
+  //     icon: <Build />,
+  //     url: '/item1',
+  //   },
+  //   // {
     //   name: 'Organizações',
     //   children: [
     //     {
@@ -60,7 +60,7 @@ const menuIndex = {
     //     },
     //   ],
     // },
-  ],
+  // ],
 };
 
 export default menuIndex;

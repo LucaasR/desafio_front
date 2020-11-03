@@ -1,3 +1,5 @@
+import rootReducer from "store/modules/rootReducer";
+
 const initialState = {};
 
 export const dashboardReducer = (state = initialState, action: any) => {
@@ -8,3 +10,5 @@ export const dashboardReducer = (state = initialState, action: any) => {
       return state;
   }
 };
+
+export type dashboardState = ReturnType<typeof rootReducer>;

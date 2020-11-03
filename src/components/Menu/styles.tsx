@@ -5,4 +5,8 @@ export const ImgBrand = styled.img`
   max-height: 40px;
 `;
 
-export const useStyles = makeStyles(theme => ({}));
+export const useStyles = makeStyles(() => ({
+  header: {
+    height: 65,
+  },
+}));
